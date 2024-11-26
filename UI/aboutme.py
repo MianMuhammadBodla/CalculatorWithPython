@@ -1,21 +1,31 @@
 import streamlit as st
-import base64
-from PIL import Image
-import io
 
-def display_round_image(image_path):
-    """Displays an image with rounded borders."""
-    try:
-        image = Image.open(image_path)
-        buffered = io.BytesIO()
-        image.save(buffered, format="JPEG")
-        img_str = base64.b64encode(buffered.getvalue()).decode()
-        st.markdown(
-            f'<img src="data:image/jpeg;base64,{img_str}" class="img-fluid" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; display: block; margin-left: auto; margin-right: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">',
-            unsafe_allow_html=True
-        )
-    except FileNotFoundError:
-        st.error("Error: Image file not found. Please check the path and try again.")
+def display_round_image(image_url):
+    """Displays an image with rounded borders using a URL."""
+    st.markdown(
+        f'''
+        <style>
+        .img-container {{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }}
+        .img-fluid {{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            border: 3px solid #fff;
+        }}
+        </style>
+        <div class="img-container">
+            <img src="{image_url}" class="img-fluid">
+        </div>
+        ''',
+        unsafe_allow_html=True
+    )
 
 def run_about_me():
     """Function to run the About Me page."""
@@ -26,7 +36,8 @@ def run_about_me():
     and chatbots, and have experience with Smart Contracts in Generative AI.
     """)
 
-    display_round_image("Portfolio-portrait-.jpeg")
+    # Pass the corrected direct link of the image
+    display_round_image("https://dl.dropboxusercontent.com/scl/fi/7lb36lr0m10kczeirtm4x/Portfolio-portrait.jpeg?rlkey=3w71dryy5144r0l7i5kb9wz50&st=3lahnyky&dl=1")
 
     st.subheader("Watch My Short Film")
     video_url = "https://www.youtube.com/embed/QW9yOYjvlWc"
