@@ -70,3 +70,7 @@ def run_about_me():
 if __name__ == "__main__":
     st.set_page_config(page_title="About Muhammad", layout="wide", initial_sidebar_state="expanded")
     run_about_me()
+
+
+
+
