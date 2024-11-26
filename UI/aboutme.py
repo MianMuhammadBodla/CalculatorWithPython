@@ -63,6 +63,7 @@ def run_about_me():
     - [GitHub](https://github.com/muhammadbodla)
     - [YouTube](https://www.youtube.com/@MuhammadBodla)
     - [Email](mailto:mianmuhammadbodla@gmail.com)
+    - [Code](https://github.com/MianMuhammadBodla/CalculatorWithPython.git)         
     """)
 
     st.write("Thank you for visiting my profile. Looking forward to connecting and collaborating on innovative projects!")
