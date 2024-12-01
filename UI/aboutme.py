@@ -58,9 +58,9 @@ def run_about_me():
     st.subheader("Connect With Me")
     st.write("""
     - [LinkedIn](https://www.linkedin.com/in/muhammad-bodla)
-    - [Facebook](https://www.facebook.com/muhammadbodla)
-    - [Instagram](https://www.instagram.com/muhammadbodla)
-    - [GitHub](https://github.com/muhammadbodla)
+    - [Facebook](https://web.facebook.com/MianMuhammadBodlah/)
+    - [Instagram]https://www.linkedin.com/in/muhammad-bodla/)
+    - [GitHub](https://web.facebook.com/MianMuhammadBodlah/)
     - [YouTube](https://www.youtube.com/@MuhammadBodla)
     - [Email](mailto:mianmuhammadbodla@gmail.com)
     - [Code](https://github.com/MianMuhammadBodla/CalculatorWithPython.git)         
