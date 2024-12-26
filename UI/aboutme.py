@@ -59,7 +59,7 @@ def run_about_me():
     st.write("""
     - [LinkedIn](https://www.linkedin.com/in/muhammad-bodla)
     - [Facebook](https://web.facebook.com/MianMuhammadBodlah/)
-    - [Instagram](https://www.linkedin.com/in/muhammad-bodla/)
+    - [Instagram](https://www.instagram.com/mian.muhammadbodla/)
     - [GitHub](https://github.com/MianMuhammadBodla)
     - [YouTube](https://www.youtube.com/@MuhammadBodla)
     - [Email](mailto:mianmuhammadbodla@gmail.com)
